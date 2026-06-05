@@ -4,15 +4,24 @@ const contentRedirect=[
     {id: 3, title:"Projects"},
     {id: 4, title:"Artwork"},
     {id: 5, title:"Game Blogs"},
-]
+];
 
 function createContentCard (content){
     const card = document.createElement("div");
     card.classList.add("card");
-    card.setAttribute("data-content-id"), content.id;
+    card.setAttribute("data-content-id", content.id);
 
     const title = document.createElement("div");
     title.classList.add("card-title");
     title.textContent = content.title;
-    
+
+    card.appendChild(title);
+
+    return card;
 }
+
+const container = document.querySelector("#content-container");
+contentRedirect.map(content => {
+    const card = createContentCard(content);
+    container.appendChild(card);
+})
