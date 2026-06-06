@@ -18,21 +18,8 @@ function createContentCard (content){
     link.textContent = content.title;
     link.classList.add("card-title");
 
-    // const link = document.createElement("a");
-    // link.href = content.link;
-    // link.classList.add("link");
-
-    // const card = document.createElement("a");
-    // card.href = content.link;
-    // card.classList.add("card");
-
-    // const title = document.createElement("div");
-    // title.classList.add("card-title");
-    // title.textContent = content.title;
-
-
     mainCard.appendChild(link);
-    //card.appendChild(link);
+    
 
     return mainCard;
 }
