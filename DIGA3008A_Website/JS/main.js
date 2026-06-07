@@ -16,6 +16,7 @@ function createContentCard (content){
     const link = document.createElement("a");
     link.href = content.link;
     link.textContent = content.title;
+    link.target = "_blank";
     link.classList.add("card-title");
 
     mainCard.appendChild(link);
@@ -30,3 +31,13 @@ contentRedirect.map(content => {
     container.appendChild(card);
 })
 
+const header = document.getElementById("heading");
+
+window.addEventListener("scroll", () =>{
+    if(window.scrollY > 10){
+        header.classList.add("shrink");
+    }
+    else{
+        header.classList.remove("shrink");
+    }
+});
