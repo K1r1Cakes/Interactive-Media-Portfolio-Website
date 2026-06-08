@@ -238,3 +238,20 @@ input{
     background-color: grey;
 }
 
+/* Games page styling */
+#content-container-games{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+.gameCard{
+    background-color: grey;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+}

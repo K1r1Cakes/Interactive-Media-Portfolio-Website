@@ -1,10 +1,12 @@
 const navLinks=[
     {id: 1,title:"Home", link:"../HTML/home.html"},
-    {id: 2,title:"Games", link:"../HTML/games.html"},
-    {id: 3,title:"Projects", link:"../HTML/projects.html"},
-    {id: 4,title:"Artwork",link:"../HTML/artwork.html"},
-    {id: 5,title:"Game Blogs",link:"../HTML/gameblogs.html"},
+    {id: 2,title:"About Me", link:"../HTML/about.html"},
+    {id: 3,title:"Games", link:"../HTML/games.html"},
+    {id: 4,title:"Projects", link:"../HTML/projects.html"},
+    {id: 5,title:"Artwork",link:"../HTML/artwork.html"},
+    {id: 6,title:"Game Blogs",link:"../HTML/gameblogs.html"},
 ];
+
 
 function createNavLink(item) {
     const link = document.createElement("a");
@@ -16,10 +18,14 @@ function createNavLink(item) {
     return link;
 }
 
+
 const navContainer = document.querySelector("#navbar-container");
 
-if (navContainer) {
-    navLinks.map(item => {
+//looks at current page, and excludes the link for that page while dynamically loading the rest
+const currentPage = window.location.pathname.split("/").pop(); 
+
+navLinks
+    .filter(item => !item.link.includes(currentPage))
+    .forEach(item => {
         navContainer.appendChild(createNavLink(item));
     });
-}

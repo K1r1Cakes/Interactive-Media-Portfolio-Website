@@ -27,10 +27,12 @@ function createContentCard (content){
 }
 
 const container = document.querySelector("#content-container");
-contentRedirect.map(content => {
-    const card = createContentCard(content);
-    container.appendChild(card);
-})
+
+if (container) {
+    contentRedirect.map(content => {
+        container.appendChild(createContentCard(content));
+    });
+}
 
 
 
@@ -44,4 +46,7 @@ window.addEventListener("scroll", () =>{
         header.classList.remove("shrink");
     }
 });
+
+
+
 
