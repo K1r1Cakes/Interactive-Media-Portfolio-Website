@@ -273,3 +273,28 @@ input{
     height: 100px;
     text-align: center;
 }
+
+/* Artwork page styling */
+#content-container-artwork{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 20px;
+    padding:20px;
+}
+.artCard{
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.artCard:nth-child(even){
+    flex-direction: row-reverse;
+    margin-top:80px;
+    background-color: darkgrey;
+}
+
