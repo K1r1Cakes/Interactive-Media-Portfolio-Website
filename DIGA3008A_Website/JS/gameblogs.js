@@ -1,7 +1,7 @@
 const gameblogNames=[
-    {id: 1, title:"1", description:"2021"},
-    {id: 2, title:"2", description:"2021"},
-    {id: 3, title:"3", description:"2021"},
+    {id: 1, title:"Vampire Survivors: How Simplicity Creates Complexity", link: "../PDF/Gameblog1.pdf"},
+    {id: 2, title:"Five Nights at Freddy’s: The Evolution of a Narrative", link: "../PDF/Gameblog2.pdf"},
+    {id: 3, title:"Keep Talking and Nobody Explodes: Communication and Cooperation Under Pressure", link: "../PDF/Gameblog3.pdf"},
 ];
 
 function createBlogCard(blog){
@@ -9,19 +9,15 @@ function createBlogCard(blog){
     mainCard.classList.add("blogCard");
     mainCard.setAttribute("data-content-id", blog.id);
 
-    const caption = document.createElement("div");
-    caption.classList.add("blog-caption");
+    const link = document.createElement("a");
+    link.href = blog.link;
+    link.textContent = blog.title;
+    link.target = "_blank";
+    link.classList.add("blog-title");
 
-    const title = document.createElement("h3");
-    title.textContent = blog.title;
-
-    const description = document.createElement("p");
-    description.textContent = blog.description;
-
-    mainCard.appendChild(title);
-    mainCard.appendChild(description);
-
+    mainCard.appendChild(link);
     
+
     return mainCard;
 }
 

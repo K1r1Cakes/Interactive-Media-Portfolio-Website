@@ -3,7 +3,6 @@ const gameNames=[
     {id: 2, title:"Planet Destroyer", description:"An asteroids varients where you destroy planets and avoid asteroids."},
     {id: 3, title: "Starship Salavage", description:"A 3D game where you play as an astronaut that must complete quests to escape the planet."},
     {id: 4, title:"Maze Escape", description:"Escape the maze while an enemy hunts you down."},
-    {id: 2, title:"Dreamscape", description:"A visual novel game that explores the sinister sercrets hidden in a small town."},
 ];
 
 function createGameCard(game){
