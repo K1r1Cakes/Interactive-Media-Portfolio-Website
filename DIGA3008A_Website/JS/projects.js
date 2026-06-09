@@ -20,10 +20,10 @@ function createProjectCard(project){
     return mainCard;
 }
 
-const container = document.querySelector("#content-container-projects");
+const projectContainer = document.querySelector("#content-container-projects");
 
-if (container) {
+if (projectContainer) {
     projectNames.map(content => {
-        container.appendChild(createProjectCard(content));
+        projectContainer.appendChild(createProjectCard(content));
     });
 }

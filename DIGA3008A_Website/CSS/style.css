@@ -45,8 +45,9 @@ body{
     transition: all 0.3s ease;
 }
 
+
 /* Desktop */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     #heading {
         min-height: 100vh; /* Full screen */
         font-size: clamp(2rem, 5vw, 4rem);
@@ -261,6 +262,16 @@ input{
     color: #00bfff;
 }  
 
+#about-me-paragraph{
+    display:flex;
+    justify-content: center;
+    width: min(600px, 90%);
+    box-sizing: border-box;
+    background-color: grey;
+    padding: 20px;
+    margin-top:20px;
+}
+
 #details{
     flex-direction:row;
     align-items:flex-start;
@@ -272,45 +283,111 @@ input{
 }
 
 /* Games page styling */
+/* Mobile */
 #content-container-games{
     display:flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     flex-wrap:wrap;
     padding:20px;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right: auto;
 }
 .gameCard{
     background-color: grey;
     border-radius: 8px;
     padding: 20px;
-    width: 300px;
-    height: 100px;
+    width: 90%;
+    max-width: 350px;
+    min-height: 180px;
     text-align: center;
+    box-sizing: border-box;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    #content-container-games{
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 25px;
+        padding: 20px;
+        flex-wrap:wrap;
+        padding:20px;
+    }
+
+    .gameCard{
+        flex: 1 1 300px;
+        max-width: 320px;
+    }   
 }
 
 /* Project page styling */
 #content-container-projects{
     display:flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
-    flex-wrap:wrap;
-    padding:20px;
+    gap: 15px;
+    padding:15px;
+    margin-top:20px;
 }
 .projectCard{
     background-color: grey;
     border-radius: 8px;
     padding: 20px;
-    width: 300px;
-    height: 100px;
+    width: 90%;
+    max-width: 350px;
+    min-height: 180px;
     text-align: center;
+    box-sizing: border-box;
+}
+/* Desktop */
+@media (min-width: 768px) {
+    #content-container-projects{
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 25px;
+        padding: 20px;
+        flex-wrap:wrap;
+        padding:20px;
+    }
+
+    .projectCard{
+        flex: 1 1 300px;
+        max-width: 320px;
+    }   
 }
 
 /* Artwork page styling */
+/* Mobile */
+#content-container-artwork{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding:15px;
+    margin-top:20px;
+}
+
+.artCard{
+    background-color: grey;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 350px;
+    min-height: 180px;
+    text-align: center;
+    box-sizing: border-box;    
+}
+
+/* Desktop */
+@media (min-width: 768px) {
 #content-container-artwork{
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
     justify-content: center;
     gap: 20px;
     padding:20px;
@@ -329,6 +406,7 @@ input{
     flex-direction: row-reverse;
     margin-top:80px;
     background-color: darkgrey;
+}
 }
 
 /* Game blogs */

@@ -20,10 +20,10 @@ function createGameCard(game){
     return mainCard;
 }
 
-const container = document.querySelector("#content-container-games");
+const gamesContainer = document.querySelector("#content-container-games");
 
-if (container) {
+if (gamesContainer) {
     gameNames.map(content => {
-        container.appendChild(createGameCard(content));
+        gamesContainer.appendChild(createGameCard(content));
     });
 }

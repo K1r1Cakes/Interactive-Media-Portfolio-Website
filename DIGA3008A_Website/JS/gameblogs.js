@@ -25,10 +25,10 @@ function createBlogCard(blog){
     return mainCard;
 }
 
-const container = document.querySelector("#content-container-gameblog");
+const blogContainer = document.querySelector("#content-container-gameblog");
 
-if (container) {
+if (blogContainer) {
     gameblogNames.map(content => {
-        container.appendChild(createBlogCard(content));
+        blogContainer.appendChild(createBlogCard(content));
     });
 }

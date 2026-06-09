@@ -26,10 +26,10 @@ function createArtCard(art){
     return mainCard;
 }
 
-const container = document.querySelector("#content-container-artwork");
+const artContainer = document.querySelector("#content-container-artwork");
 
-if (container) {
+if (artContainer) {
     artNames.map(content => {
-        container.appendChild(createArtCard(content));
+        artContainer.appendChild(createArtCard(content));
     });
 }

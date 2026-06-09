@@ -39,7 +39,7 @@ if (container) {
 const header = document.getElementById("heading");
 
 window.addEventListener("scroll", () =>{
-     if (window.innerWidth >= 768) {
+     if (window.innerWidth >= 1024) {
         if (window.scrollY > 100) {
             heading.classList.add("shrink");
         } else {
