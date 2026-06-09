@@ -1,9 +1,9 @@
 const contentRedirect=[
-    {id: 1, title:"About me", link:"../HTML/about.html"},
-    {id: 2, title:"Games", link:"../HTML/games.html"},
-    {id: 3, title:"Projects", link:"../HTML/projects.html"},
-    {id: 4, title:"Artwork",link:"../HTML/artwork.html"},
-    {id: 5, title:"Game Blogs",link:"../HTML/gameblogs.html"},
+    {id: 1, title:"About me", link:"../HTML/about.html",keywords: ["education", "skills", "about"]},
+    {id: 2, title:"Games", link:"../HTML/games.html",keywords: ["games", "2D", "3D"]},
+    {id: 3, title:"Projects", link:"../HTML/projects.html",keywords: ["projects", "circuits", "software","online"]},
+    {id: 4, title:"Artwork",link:"../HTML/artwork.html",keywords: ["art", "digital art", "models"]},
+    {id: 5, title:"Game Blogs",link:"../HTML/gameblogs.html",keywords: ["blog", "writing", "opinion"]},
 ];
 
 
@@ -37,17 +37,49 @@ if (container) {
 
 
 const header = document.getElementById("heading");
+const cards = document.querySelectorAll("card");
+
 
 window.addEventListener("scroll", () =>{
      if (window.innerWidth >= 1024) {
         if (window.scrollY > 100) {
-            heading.classList.add("shrink");
+            header.classList.add("shrink");
         } else {
-            heading.classList.remove("shrink");
+            header.classList.remove("shrink");
         }
     }
 });
 
+const searchBar = document.getElementById("search");
 
+function displayCards(cards) {
+    container.innerHTML = "";
 
+    cards.forEach(card => {
+        container.appendChild(createContentCard(card));
+    });
+}
+
+// initial load
+displayCards(contentRedirect);
+
+if (searchBar) {
+    searchBar.addEventListener("input", () => {
+        const searchTerm = searchBar.value.toLowerCase();
+
+        const filterCards = contentRedirect.filter(item => {
+            const matchTitle = item.title
+                .toLowerCase()
+                .includes(searchTerm);
+
+            const matchKeyword = item.keywords.some(keyword =>
+                keyword.toLowerCase().includes(searchTerm)
+            );
+
+            return matchTitle || matchKeyword;
+        });
+
+        displayCards(filterCards);
+    });
+}
 

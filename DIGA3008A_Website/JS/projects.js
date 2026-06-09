@@ -1,6 +1,7 @@
 const projectNames=[
     {id: 1, title:"Electronics safe code", description:"This project contains a three part system that needs to get a specific code to unlock a safe."},
     {id: 2, title:"Morabaraba", description:"A multiyplayer online game of Morabaraba."},
+    {id: 3, title:"Reverse 2048", description:"A C++ game of reverse 2048 that uses two AI algortihms to play against each other"},
 ];
 
 function createProjectCard(project){
