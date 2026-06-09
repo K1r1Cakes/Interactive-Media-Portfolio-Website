@@ -39,11 +39,12 @@ if (container) {
 const header = document.getElementById("heading");
 
 window.addEventListener("scroll", () =>{
-    if(window.scrollY > 10){
-        header.classList.add("shrink");
-    }
-    else{
-        header.classList.remove("shrink");
+     if (window.innerWidth >= 768) {
+        if (window.scrollY > 100) {
+            heading.classList.add("shrink");
+        } else {
+            heading.classList.remove("shrink");
+        }
     }
 });
 

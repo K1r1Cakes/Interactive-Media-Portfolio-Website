@@ -27,36 +27,36 @@ body{
     padding: 20 px
 }
 
+/* Mobile */
+.heading{
+    margin:0;
+}
 #heading{
     background-color: grey;
     border-radius: 8px;
-    width: auto;
-    font-family: "Lora", "serif";
-    font-size:40px;
-    display: flex;
-    padding:100px;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-
-    transition: height 0.3s ease;
-}
-
-#heading.shrink{
-    height: 250px;
-}
-
-#heading-other{
+    font-family: "Lora", serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
-    height: 250px;
-    margin-top:20px;
-    border-radius: 8px;
-    font-family: "Lora", "serif";
-    font-size:40px;
+    width: 100%;
+    padding: 2rem;
+    min-height: 120px;
+
+    transition: all 0.3s ease;
 }
+
+/* Desktop */
+@media (min-width: 768px) {
+    #heading {
+        min-height: 100vh; /* Full screen */
+        font-size: clamp(2rem, 5vw, 4rem);
+    }
+
+    #heading.shrink {
+        min-height: 200px;
+    }
+}
+
 
 #name{
     display: flex;
@@ -88,6 +88,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top:30px;
     margin-left: auto;
     margin-right: auto;
@@ -135,7 +136,100 @@ input{
    
 }
 
+/* Mobile */
+#heading-other{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    height: 250px;
+    margin-top:20px;
+    border-radius: 8px;
+    font-family: "Lora", "serif";
+    font-size:40px;
+}
+
 /* About page styling */
+
+.navbar-container{
+    display:none;
+}
+
+#details{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#portrait-and-education{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    width: min(300px, 90%);
+    min-height: 300px;
+    flex-wrap: wrap;
+    margin-top:20px;
+    
+}
+
+.portrait{
+    width:100px;
+    height:100px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.education-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width:150px;
+}
+
+#about-me-paragraph{
+    display:flex;
+    justify-content: center;
+    width: min(600px, 90%);
+    box-sizing: border-box;
+    background-color: grey;
+    padding: 20px;
+    margin-top:20px;
+}
+
+#content-card-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+
+.technical-skills,.personal-skills{
+    flex: 1;
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.skill-list{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.software-logos{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
 #navbar-container {
     display: flex;
     justify-content: center;
@@ -165,77 +259,16 @@ input{
 
 .navbar-link:hover {
     color: #00bfff;
-}
+}  
 
 #details{
-    display:flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-#portrait-and-education{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    gap:20px;
-    background-color: grey;
-    height: 300px;
-    width: 300px;
-    flex-wrap: wrap;
-    margin-top:20px;
-    
-}
-
-.portrait{
-    width:100px;
-    height:100px;
-    background-color: white;
-    border-radius: 50%;
-}
-
-.education-tag{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    width:150px;
-}
-
-#about-me-paragraph{
-    display:flex;
-    justify-content: center;
-    min-width: 300px;
-    max-width: 600px;
-    width: 100%;
-    background-color: grey;
-    padding: 20px;
-    margin-top:20px;
+    flex-direction:row;
+    align-items:flex-start;
 }
 
 #content-card-skills{
-    display: flex;
-    gap: 20px;
-    margin: 20px;
+    flex-direction:row;
 }
-
-.technical-skills,.personal-skills{
-    flex: 1;
-    background-color: lightgrey;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.skill-list{
-    margin-top: 20px;
-    padding: 10px;
-}
-
-.software-logos{
-    display:flex;
-    background-color: grey;
 }
 
 /* Games page styling */
