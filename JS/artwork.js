@@ -1,5 +1,5 @@
 const artNames=[
-    {id: 1, title:"Muppet", description:"2025", link:"../Media/art1.jpeg"},
+    {id: 1, title:"Muppet", description:"2025", link:"/Interactive-Media-Portfolio-Website/Media/art1.jpeg"},
     {id: 2, title:"Takalani Sesame", description:"2023", link:"../Media/art2.jpeg"},
     {id: 3, title:"The Litch", description:"2021",link:"../Media/art3.jpeg" },
     {id: 4, title:"Angel", description:"2022",link:"/Media/art4.jpeg" },
