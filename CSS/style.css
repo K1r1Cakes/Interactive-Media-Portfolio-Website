@@ -181,8 +181,12 @@ input{
 .portrait{
     width:100px;
     height:100px;
-    background-color: grey;
     border-radius: 50%;
+
+    background-image: url("../Media/Me.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .education-tag{
