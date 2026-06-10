@@ -411,6 +411,14 @@ input{
     box-sizing: border-box;    
 }
 
+.art-image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
 /* Desktop */
 @media (min-width: 1024px) {
 #content-container-artwork{
@@ -423,10 +431,18 @@ input{
 .artCard{
     display: flex;
     align-items: center;
+    gap:20px;
     border-radius: 8px;
     padding: 20px;
-    width: 300px;
+    width: 500px;
     height: 300px;
+}
+
+.art-image{
+    width:180px;
+    height:100%;
+    object-fit:cover;
+    flex-shrink:0;
 }
 
 .artCard:nth-child(even){

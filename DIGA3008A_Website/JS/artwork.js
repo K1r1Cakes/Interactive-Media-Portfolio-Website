@@ -1,7 +1,12 @@
 const artNames=[
-    {id: 1, title:"Jellyfish", description:"2021"},
-    {id: 2, title:"Astronaut", description:"2021"},
-    {id: 3, title:"Sun", description:"2021"},
+    {id: 1, title:"Muppet", description:"2025", link:"../Media/art1.jpeg"},
+    {id: 2, title:"Takalani Sesame", description:"2023", link:"../Media/art2.jpeg"},
+    {id: 3, title:"The Litch", description:"2021",link:"../Media/art3.jpeg" },
+    {id: 4, title:"Angel", description:"2022",link:"../Media/art4.jpeg" },
+    {id: 5, title:"Sea Creatures", description:"2025",link:"../Media/art5.jpeg" },
+    {id: 6, title:"Snake eye", description:"2023",link:"../Media/art6.jpeg" },
+    {id: 7, title:"Jellyfish", description:"2024",link:"../Media/art7.jpeg" },
+    {id: 8, title:"Tomie", description:"2021",link:"../Media/art8.jpeg" },
 ];
 
 function createArtCard(art){
@@ -9,8 +14,10 @@ function createArtCard(art){
     mainCard.classList.add("artCard");
     mainCard.setAttribute("data-content-id", art.id);
 
-    const caption = document.createElement("div");
-    caption.classList.add("art-caption");
+    const image = document.createElement("img");
+    image.src = art.link;
+    image.alt = art.title;
+    image.classList.add("art-image");
 
     const title = document.createElement("h3");
     title.textContent = art.title;
@@ -18,10 +25,9 @@ function createArtCard(art){
     const description = document.createElement("p");
     description.textContent = art.description;
 
+    mainCard.appendChild(image);
     mainCard.appendChild(title);
     mainCard.appendChild(description);
-
-    
 
     return mainCard;
 }
