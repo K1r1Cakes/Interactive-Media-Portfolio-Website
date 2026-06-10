@@ -2,10 +2,10 @@ const base = "/Interactive-Media-Portfolio-Website/";
 
 const contentRedirect=[
     {id: 1, title:"About me", link:  "/Interactive-Media-Portfolio-Website/HTML/about.html",keywords: ["education", "skills", "about"]},
-    {id: 2, title:"Games", link:"games.html",keywords: ["games", "2D", "3D"]},
-    {id: 3, title:"Projects", link:"projects.html",keywords: ["projects", "circuits", "software","online"]},
-    {id: 4, title:"Artwork",link:"artwork.html",keywords: ["art", "digital art", "models"]},
-    {id: 5, title:"Game Blogs",link:"gameblogs.html",keywords: ["blog", "writing", "opinion"]},
+    {id: 2, title:"Games", link:"/Interactive-Media-Portfolio-Website/HTML/games.html",keywords: ["games", "2D", "3D"]},
+    {id: 3, title:"Projects", link:"/Interactive-Media-Portfolio-Website/HTML/projects.html",keywords: ["projects", "circuits", "software","online"]},
+    {id: 4, title:"Artwork",link:"/Interactive-Media-Portfolio-Website/HTML/artwork.html",keywords: ["art", "digital art", "models"]},
+    {id: 5, title:"Game Blogs",link:"/Interactive-Media-Portfolio-Website/HTML/gameblogs.html",keywords: ["blog", "writing", "opinion"]},
 ];
 
 
