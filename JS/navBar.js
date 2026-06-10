@@ -1,10 +1,10 @@
 const navLinks=[
     {id: 1,title:"Home", link:"/index.html"},
-    {id: 2,title:"About Me", link:"../HTML/about.html"},
-    {id: 3,title:"Games", link:"../HTML/games.html"},
-    {id: 4,title:"Projects", link:"../HTML/projects.html"},
-    {id: 5,title:"Artwork",link:"../HTML/artwork.html"},
-    {id: 6,title:"Game Blogs",link:"../HTML/gameblogs.html"},
+    {id: 2,title:"About Me", link:"about.html"},
+    {id: 3,title:"Games", link:"games.html"},
+    {id: 4,title:"Projects", link:"projects.html"},
+    {id: 5,title:"Artwork",link:"artwork.html"},
+    {id: 6,title:"Game Blogs",link:"gameblogs.html"},
 ];
 
 
@@ -29,3 +29,5 @@ navLinks
     .forEach(item => {
         navContainer.appendChild(createNavLink(item));
     });
+
+    console.log(item.link)
