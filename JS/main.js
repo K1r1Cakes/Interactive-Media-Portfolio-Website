@@ -1,5 +1,5 @@
 const contentRedirect=[
-    {id: 1, title:"About me", link:"/HTML/about.html",keywords: ["education", "skills", "about"]},
+    {id: 1, title:"About me", link:"HTML/about.html",keywords: ["education", "skills", "about"]},
     {id: 2, title:"Games", link:"games.html",keywords: ["games", "2D", "3D"]},
     {id: 3, title:"Projects", link:"projects.html",keywords: ["projects", "circuits", "software","online"]},
     {id: 4, title:"Artwork",link:"artwork.html",keywords: ["art", "digital art", "models"]},
