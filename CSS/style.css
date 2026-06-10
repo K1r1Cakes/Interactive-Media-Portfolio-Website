@@ -128,6 +128,8 @@ input{
 
 .card img,
 .card-image{
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
     width: 100%;
     height: 120px;
     object-fit: cover;
