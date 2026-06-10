@@ -1,11 +1,11 @@
 const base = "/Interactive-Media-Portfolio-Website/";
 
 const contentRedirect=[
-    {id: 1, title:"About me", link:  "/Interactive-Media-Portfolio-Website/HTML/about.html",keywords: ["education", "skills", "about"]},
-    {id: 2, title:"Games", link:"/Interactive-Media-Portfolio-Website/HTML/games.html",keywords: ["games", "2D", "3D"]},
-    {id: 3, title:"Projects", link:"/Interactive-Media-Portfolio-Website/HTML/projects.html",keywords: ["projects", "circuits", "software","online"]},
-    {id: 4, title:"Artwork",link:"/Interactive-Media-Portfolio-Website/HTML/artwork.html",keywords: ["art", "digital art", "models"]},
-    {id: 5, title:"Game Blogs",link:"/Interactive-Media-Portfolio-Website/HTML/gameblogs.html",keywords: ["blog", "writing", "opinion"]},
+    {id: 1, title:"About me", link:  "/Interactive-Media-Portfolio-Website/HTML/about.html",keywords: ["education", "skills", "about"], image:"/Interactive-Media-Portfolio-Website//Media/Qmark.png"},
+    {id: 2, title:"Games", link:"/Interactive-Media-Portfolio-Website/HTML/games.html",keywords: ["games", "2D", "3D"],image:"/Interactive-Media-Portfolio-Website//Media/GameController.png"},
+    {id: 3, title:"Projects", link:"/Interactive-Media-Portfolio-Website/HTML/projects.html",keywords: ["projects", "circuits", "software","online"],image:"/Interactive-Media-Portfolio-Website//Media/Gate.png"},
+    {id: 4, title:"Artwork",link:"/Interactive-Media-Portfolio-Website/HTML/artwork.html",keywords: ["art", "digital art", "models"],image:"/Interactive-Media-Portfolio-Website//Media/Brush.png"},
+    {id: 5, title:"Game Blogs",link:"/Interactive-Media-Portfolio-Website/HTML/gameblogs.html",keywords: ["blog", "writing", "opinion"],image:"/Interactive-Media-Portfolio-Website//Media/glasses.png"},
 ];
 
 
@@ -16,12 +16,18 @@ function createContentCard (content){
     mainCard.classList.add("card");
     mainCard.setAttribute("data-content-id", content.id); //Creates main card
 
+    const image = document.createElement("img");
+    image.src = content.image;
+    image.alt = content.title;
+    image.classList.add("card-image");
+
     const link = document.createElement("a");
     link.href = content.link;
     link.textContent = content.title;
     link.target = "_blank";
     link.classList.add("card-title");
 
+    mainCard.appendChild(image);
     mainCard.appendChild(link);
     
 
