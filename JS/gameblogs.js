@@ -10,8 +10,8 @@ function createBlogCard(blog){
     mainCard.setAttribute("data-content-id", blog.id);
 
     const image = document.createElement("img");
-    image.src = content.image;
-    image.alt = content.title;
+    image.src = blog.image;
+    image.alt = blog.title;
     image.classList.add("blog-image");
 
     const link = document.createElement("a");
