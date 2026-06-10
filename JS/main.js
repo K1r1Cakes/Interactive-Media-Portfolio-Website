@@ -1,9 +1,9 @@
 const contentRedirect=[
-    {id: 1, title:"About me", link:"/HTML/about.html",keywords: ["education", "skills", "about"]},
-    {id: 2, title:"Games", link:"/HTML/games.html",keywords: ["games", "2D", "3D"]},
-    {id: 3, title:"Projects", link:"/HTML/projects.html",keywords: ["projects", "circuits", "software","online"]},
-    {id: 4, title:"Artwork",link:"/HTML/artwork.html",keywords: ["art", "digital art", "models"]},
-    {id: 5, title:"Game Blogs",link:"/HTML/gameblogs.html",keywords: ["blog", "writing", "opinion"]},
+    {id: 1, title:"About me", link:"HTML/about.html",keywords: ["education", "skills", "about"]},
+    {id: 2, title:"Games", link:"HTML/games.html",keywords: ["games", "2D", "3D"]},
+    {id: 3, title:"Projects", link:"HTML/projects.html",keywords: ["projects", "circuits", "software","online"]},
+    {id: 4, title:"Artwork",link:"HTML/artwork.html",keywords: ["art", "digital art", "models"]},
+    {id: 5, title:"Game Blogs",link:"HTML/gameblogs.html",keywords: ["blog", "writing", "opinion"]},
 ];
 
 
