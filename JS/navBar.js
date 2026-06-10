@@ -1,5 +1,5 @@
 const navLinks=[
-    {id: 1,title:"Home", link:"index.html"},
+    {id: 1,title:"Home", link:"/Interactive-Media-Portfolio-Website/index.html"},
     {id: 2,title:"About Me", link:"about.html"},
     {id: 3,title:"Games", link:"games.html"},
     {id: 4,title:"Projects", link:"projects.html"},

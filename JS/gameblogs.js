@@ -1,7 +1,7 @@
 const gameblogNames=[
-    {id: 1, title:"Vampire Survivors: How Simplicity Creates Complexity", link: "/PDF/Gameblog1.pdf"},
-    {id: 2, title:"Five Nights at Freddy’s: The Evolution of a Narrative", link: "/PDF/Gameblog2.pdf"},
-    {id: 3, title:"Keep Talking and Nobody Explodes: Communication and Cooperation Under Pressure", link: "/PDF/Gameblog3.pdf"},
+    {id: 1, title:"Vampire Survivors: How Simplicity Creates Complexity", link: "/Interactive-Media-Portfolio-Website/PDF/Gameblog1.pdf"},
+    {id: 2, title:"Five Nights at Freddy’s: The Evolution of a Narrative", link: "/Interactive-Media-Portfolio-Website/PDF/Gameblog2.pdf"},
+    {id: 3, title:"Keep Talking and Nobody Explodes: Communication and Cooperation Under Pressure", link: "/Interactive-Media-Portfolio-Website/PDF/Gameblog3.pdf"},
 ];
 
 function createBlogCard(blog){
