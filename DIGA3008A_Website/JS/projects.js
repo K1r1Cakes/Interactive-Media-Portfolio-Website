@@ -9,13 +9,16 @@ function createProjectCard(project){
     mainCard.classList.add("projectCard");
     mainCard.setAttribute("data-content-id", project.id);
 
-    const title = document.createElement("h3");
-    title.textContent = project.title;
+    const link = document.createElement("a");
+    link.href = project.link;
+    link.textContent = project.title;
+    link.target = "_blank";
+    link.classList.add("project-title");
 
     const description = document.createElement("p");
     description.textContent = project.description;
 
-    mainCard.appendChild(title);
+    mainCard.appendChild(link);
     mainCard.appendChild(description);
 
     return mainCard;

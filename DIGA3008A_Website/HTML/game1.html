@@ -4,20 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game 1</title>
+    <link rel="stylesheet" href="../CSS/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <script src="../JS/navBar.js" defer></script>
 </head>
 <body>
     <main>
-        <header>
+        <header id="heading-other" >
             <h1>CLAWSTROPHOBIC</h1>
         </header>
 
         <section id="visuals">
-            <div class="video"></div>
-            <div class="snapshots"></div>
+            <div class="video-container">
+                <video controls>
+                <source src="../Media/Clawstrophobic-Gameplay.mp4" type="video/mp4">
+            </video>
+            </div>
+            
+            <div class="snapshots">
+                <img src="../Media/Claw1.png" alt="Snapshot 1">
+                <img src="../Media/Claw2.png" alt="Snapshot 2">
+                <img src="../Media/Claw3.png" alt="Snapshot 3">
+                <img src="../Media/Claw4.png" alt="Snapshot 4">
+            </div>
         </section>
 
         <section id="description">
-
+            <p>Clawstrophobic is a 2D, top-down survival-action game. It takes place on a mysterious island where you have crash landed.
+                The goal is to collect three radio components all while tring to manage heat, hunger, thirst and health. The are many blood thirsty 
+                crabs around, so becareful. [2026]
+            </p>
         </section>
     </main>
 </body>
