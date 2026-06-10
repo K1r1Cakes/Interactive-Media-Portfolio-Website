@@ -1,5 +1,5 @@
 const navLinks=[
-    {id: 1,title:"Home", link:"../HTML/home.html"},
+    {id: 1,title:"Home", link:"/index.html"},
     {id: 2,title:"About Me", link:"../HTML/about.html"},
     {id: 3,title:"Games", link:"../HTML/games.html"},
     {id: 4,title:"Projects", link:"../HTML/projects.html"},
