@@ -4,20 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
+    <link rel="stylesheet" href="../CSS/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <header>
+        <header id="heading-other">
             <h1>ELECTRONICS</h1>
         </header>
 
         <section id="visuals">
-            <div class="video"></div>
-            <div class="snapshots"></div>
+            <div class="video-container">
+                <video controls>
+                    <source src="../Media/Electronics-Edit.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="snapshots">
+                <img src="../Media/Elec1.jpg" alt="Snapshot 1">
+                <img src="../Media/Elec2.jpg" alt="Snapshot 2">
+            </div>
         </section>
 
         <section id="description">
+            <p>This project was a three system lock that utilised three different sensors to input a code to unlock a box.
+                This was a group project. My contribution was the flash sensor, (the first system). This system counted the number of
+                flashes and displayed it on the two-segment display. Once it got to the correct number, it moves on to the next system.
+                [2025]
+            </p>
+            
+        </section>
 
+        <section >
+            <nav id="project-documents" >
+                <a href="../PDF/ELEN2016A_Project.pdf" target="_blank">Read more here: Electronics Project</a>
+            </nav>
         </section>
     </main>
 </body>

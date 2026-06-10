@@ -506,6 +506,7 @@ input{
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 5px;
+    padding:20px;
 }
 
 #heading-other{
@@ -575,5 +576,22 @@ input{
     #description p{
         font-size: 0.95rem;
     }
+}
+
+#project-documents{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+#project-documents a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: "Merriweather", serif;
+}
+
+#project-documents a:hover{
+    color:#accbff;
 }
 
