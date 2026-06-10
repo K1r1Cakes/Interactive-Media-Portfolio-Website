@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game 2</title>
+    <link rel="stylesheet" href="../CSS/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <header>
+        <header id="heading-other">
             <h1>PLANET DESTROYER</h1>
         </header>
 
         <section id="visuals">
-            <div class="video"></div>
-            <div class="snapshots"></div>
+            <div class="video-container">
+                <video controls>
+                    <source src="../Media/Planet-Destroyer-Edit.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="snapshots">
+                <img src="../Media/Planet1.png" alt="Snapshot 1">
+                <img src="../Media/Planet2.png" alt="Snapshot 2">
+            </div>
         </section>
 
         <section id="description">
-
+            <p>Planet Destroyer is an iteration of the classic arcade game, Asteroids. Shoot the planets 
+                and avoid the asteroids hurtling towards you at an increasing speed. This was an individual project. [2026 Unity]
+            </p>
         </section>
     </main>
 </body>
