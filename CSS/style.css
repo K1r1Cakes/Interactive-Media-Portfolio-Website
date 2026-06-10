@@ -475,6 +475,17 @@ input{
     gap: 20px;
     padding:20px;
 }
+
+.blogimg,
+.blog-image{
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+} 
 .blogCard{
     display: flex;
     align-items: center;

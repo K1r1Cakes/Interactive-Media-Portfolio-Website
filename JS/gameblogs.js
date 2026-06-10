@@ -12,7 +12,7 @@ function createBlogCard(blog){
     const image = document.createElement("img");
     image.src = content.image;
     image.alt = content.title;
-    image.classList.add("card-image");
+    image.classList.add("blog-image");
 
     const link = document.createElement("a");
     link.href = blog.link;
